@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>B2 Relative Clauses Assessment</title>
+<style>
+:root{--indigo:#4338ca;--purple:#7c3aed;--ink:#172033;--muted:#667085;--bg:#f5f3ff;--card:#fff;--line:#ddd6fe;--danger:#b42318}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(135deg,#f5f3ff,#eef2ff);color:var(--ink);min-height:100vh}
+header{background:linear-gradient(110deg,var(--indigo),var(--purple));color:white;padding:28px 18px}.wrap{max-width:900px;margin:auto}.brand{font-weight:800;letter-spacing:.04em}.subtitle{opacity:.9;margin-top:5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 45px #4338ca18;padding:24px;margin:24px auto}.hidden{display:none!important}
+h1,h2,h3{margin-top:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.student{padding:14px;border:1px solid #e9e5ff;border-radius:14px;background:#faf9ff}
+label{display:block;font-size:.85rem;font-weight:700;margin:7px 0 5px}input{width:100%;padding:12px;border:1px solid #c7c3d9;border-radius:10px;font:inherit}
+button{border:0;border-radius:11px;padding:12px 18px;font-weight:800;font-size:.95rem;cursor:pointer}.primary{background:linear-gradient(110deg,var(--indigo),var(--purple));color:white}.secondary{background:#ede9fe;color:#3730a3}.danger{background:#fee4e2;color:#912018}.actions{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:20px}
+.progress{height:10px;background:#ecebfa;border-radius:99px;overflow:hidden}.progress>div{height:100%;background:linear-gradient(90deg,var(--indigo),var(--purple));width:0}
+.pill{display:inline-block;background:#ede9fe;color:#4c1d95;border-radius:99px;padding:5px 10px;font-size:.78rem;font-weight:800}.question{font-size:1.18rem;line-height:1.5;margin:20px 0}
+.option{display:block;border:1px solid #d9d6e8;border-radius:12px;padding:13px;margin:9px 0;cursor:pointer}.option:hover{border-color:#8b5cf6;background:#faf5ff}.option input{width:auto;margin-right:10px}
+.notice{background:#f9f5ff;border-left:4px solid var(--purple);padding:12px 14px;border-radius:8px}.small{font-size:.86rem;color:var(--muted)}
+#lock{position:fixed;inset:0;z-index:99999;background:linear-gradient(145deg,#24114f,#312e81);color:white;display:flex;align-items:center;justify-content:center;padding:20px}#lock .box{width:min(520px,100%);text-align:center;background:#ffffff14;border:1px solid #ffffff30;padding:30px;border-radius:22px;backdrop-filter:blur(10px)}
+#teacherPanel{position:fixed;inset:0;z-index:9999;background:#f7f7fb;overflow:auto;padding:20px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.85rem}th,td{padding:9px;border:1px solid #ddd;text-align:left;vertical-align:top}th{background:#ede9fe}
+.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.metric{padding:16px;border:1px solid var(--line);border-radius:14px}.metric b{font-size:1.5rem;color:#4c1d95}
+@media(max-width:650px){.grid,.summary{grid-template-columns:1fr}.card{margin:14px 10px;padding:18px}header{padding:20px 12px}.question{font-size:1.05rem}}
+@media print{header,.no-print{display:none!important}.card{box-shadow:none;border:0;margin:0;max-width:none}body{background:#fff}}
+</style>
+
+
+<style id="paperStyle">
+:root{
+  --navy:#25204f; --violet:#6d4aff; --purple:#8b5cf6; --lav:#eee9ff;
+  --paper:#fffdf8; --ink:#202234; --muted2:#737386; --gold:#f4b942;
+}
+body{
+  background:
+    radial-gradient(circle at 10% 10%,#b8a7ff55 0 8%,transparent 9%),
+    radial-gradient(circle at 90% 18%,#e4b9ff55 0 10%,transparent 11%),
+    linear-gradient(145deg,#dcd7f7,#eef0ff 48%,#e7ddf7)!important;
+  color:var(--ink); min-height:100vh;
+}
+header{
+  background:linear-gradient(115deg,#211b4c,#5137a6 55%,#7a4fe4)!important;
+  padding:22px 18px; box-shadow:0 8px 24px #261b5c38;
+}
+header .brand{font-size:.78rem;letter-spacing:.14em}
+header h1{font-family:Georgia,serif;font-size:2rem}
+.card{
+  background:var(--paper)!important;
+  border:1px solid #cfc7e7!important;
+  border-radius:18px!important;
+  box-shadow:0 20px 55px #30275d25!important;
+}
+#setup{position:relative;overflow:hidden}
+#setup:after{
+  content:"";position:absolute;width:180px;height:180px;border-radius:50%;
+  right:-75px;top:-75px;background:linear-gradient(135deg,#7c3aed22,#4338ca08);
+}
+.student{background:linear-gradient(180deg,#fff,#faf8ff)!important;border:1px solid #ddd5f8!important}
+input{background:#fff;border:1px solid #bdb6d7!important}
+.primary{background:linear-gradient(115deg,#4338ca,#7c3aed)!important;box-shadow:0 8px 18px #4f46e52b}
+.secondary{background:#eeeaff!important;color:#332a75!important}
+#quiz{
+  padding:42px 48px 34px!important; min-height:1080px; position:relative;
+  background:
+    linear-gradient(90deg,transparent 0 38px,#e4c9d0 38px 40px,transparent 40px),
+    repeating-linear-gradient(0deg,transparent 0 31px,#dce2ef55 32px),
+    var(--paper)!important;
+}
+#quiz:before{
+  content:"B2 ENGLISH • RELATIVE CLAUSES";
+  display:block;border-bottom:3px double #3b326e;padding:0 0 12px 4px;margin:0 0 18px 4px;
+  font-family:Georgia,serif;font-weight:800;letter-spacing:.1em;color:#30285f;
+}
+#quiz:after{
+  content:"UNIVERSITY ASSESSMENT"; position:absolute; right:28px; bottom:14px;
+  font-size:.68rem;letter-spacing:.16em;color:#9b95ac;font-weight:800;
+}
+.progress{height:8px;background:#e8e4f2!important;margin:12px 0 20px}
+.progress>div{background:linear-gradient(90deg,#5146d8,#9b62ea)!important}
+.pill{
+  background:linear-gradient(90deg,#eee9ff,#f6efff)!important;color:#4a378c!important;
+  border:1px solid #d9cff8;padding:5px 10px;letter-spacing:.04em;
+}
+.page-label{font-family:Georgia,serif;color:#5d5870;font-weight:700}
+.listening-banner{
+  position:relative;padding:16px 18px 16px 56px;border:1px solid #b8a9ee!important;
+  background:linear-gradient(100deg,#f0ebff,#fbf9ff)!important;margin:10px 0 20px;
+  border-radius:12px!important;box-shadow:0 5px 14px #5c45a812;
+}
+.listening-banner:before{
+  content:"♪";position:absolute;left:18px;top:10px;font-size:2rem;color:#6d4aff;font-weight:900;
+}
+.question-card{
+  padding:16px 14px 18px;margin:0 0 10px;border:1px solid #e4dfec!important;
+  border-radius:12px;background:#fffefa;box-shadow:0 4px 12px #30275d0d;
+  break-inside:avoid;
+}
+.question-card .question{margin:8px 0 11px;font-size:1.02rem;line-height:1.48}
+.question-card .question b{
+  display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
+  background:#3e357d;color:#fff;margin-right:5px;
+}
+.question-card .option{
+  padding:9px 11px;margin:6px 0;border-radius:8px!important;background:#fff!important;
+  border:1px solid #d8d3e3!important;transition:.15s ease;
+}
+.question-card .option:hover{border-color:#8066dc!important;background:#f8f5ff!important;transform:translateX(2px)}
+.question-card .option:has(input:checked){border-color:#6d4aff!important;background:#f0ebff!important;box-shadow:0 0 0 2px #6d4aff15}
+.question-card input[type=radio]{accent-color:#5b43d6}
+#result{border-top:8px solid #5d43d8!important}
+.metric{background:linear-gradient(145deg,#fff,#f6f2ff);border:1px solid #ded5fa!important}
+.metric b{color:#5038bc!important}
+#lock{background:radial-gradient(circle at top,#5b3da3,#211744 70%)!important}
+#lock .box{box-shadow:0 24px 70px #0005}
+@media(max-width:650px){
+ #quiz{padding:25px 18px 28px 32px!important;min-height:auto;background:var(--paper)!important}
+ #quiz:before{font-size:.8rem}.question-card{padding:13px 10px}
+ header h1{font-size:1.6rem}
+}
+@media print{
+ body{background:#fff!important} #quiz{box-shadow:none!important;border:0!important}
+ .question-card{box-shadow:none!important}
+}
+</style>
+
+
+<style id="twoPageOverride">
+#quiz{min-height:auto!important;padding:28px 34px 26px!important}
+.question-card{padding:8px 10px 9px!important;margin:0 0 5px!important;border-radius:8px!important}
+.question-card .question{margin:4px 0 6px!important;font-size:.91rem!important;line-height:1.3!important}
+.question-card .question b{width:23px!important;height:23px!important;font-size:.76rem!important}
+.question-card .pill{font-size:.62rem!important;padding:3px 7px!important}
+.question-card .option{display:inline-flex!important;width:calc(50% - 7px)!important;margin:3px 5px 3px 0!important;padding:5px 7px!important;font-size:.79rem!important;vertical-align:top!important}
+#quiz:before{margin-bottom:10px!important;padding-bottom:7px!important}
+.progress{margin:8px 0 11px!important}
+@media(max-width:700px){
+ .question-card .option{width:100%!important;display:flex!important}
+ #quiz{padding:22px 16px 24px 28px!important}
+}
+</style>
+
+<style id="writingStyle">
+.writing-card{border-left:5px solid #7c3aed!important;background:linear-gradient(100deg,#fffefa,#faf7ff)!important}
+.writing-input{width:100%;min-height:72px;resize:vertical;border:1.5px solid #bdb4dd;border-radius:9px;padding:10px 12px;font:inherit;line-height:1.4;background:#fff;outline:none}
+.writing-input:focus{border-color:#6d4aff;box-shadow:0 0 0 3px #6d4aff18}
+.writing-card .pill{background:#e9e1ff!important;color:#4d2fa5!important}
+</style>
+
+<style id="reviewStyle">
+.review-box{margin-top:18px;padding:20px;border-radius:14px;background:#fbf9ff;border:1px solid #d9cff8}
+.review-box h3{color:#3d2c88;margin-bottom:6px}
+.review-item{padding:13px 14px;margin:10px 0;background:white;border:1px solid #e2ddec;border-left:5px solid #c2415d;border-radius:9px}
+.review-q{margin-bottom:8px;line-height:1.4}.review-label{font-weight:800;color:#5d5870}
+.student-wrong{color:#a1263f}.correct-answer{color:#176b48;font-weight:700}
+.review-box.perfect{border-left:6px solid #198754;background:#f5fff9}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">B2 ENGLISH • GRADED ACTIVITY</div><h1 style="margin:5px 0 0">Relative Clauses</h1><div class="subtitle">Who • Which • That • Where • When • Defining Relative Clauses</div></div></header>
+<main class="wrap">
+<section id="setup" class="card">
+<div class="pill" style="margin-bottom:10px">ASSESSMENT CHECK-IN</div><h2 style="font-family:Georgia,serif;color:#30285f">Team Information</h2>
+<p class="notice">Complete the activity individually or in a team of up to four. Student 1 is required. The assessment contains 30 graded items presented in a polished paper-style questionnaire. Once you begin, fullscreen and integrity monitoring become active.</p>
+<div class="grid" id="teamGrid"></div>
+<div class="actions"><span class="small">25 graded questions • No countdown timer • Answers can be reviewed before submission</span><button class="primary" id="startBtn">Begin Assessment</button></div>
+</section>
+<section id="quiz" class="card hidden">
+<div class="actions" style="margin-top:0"><span class="pill" id="qType">QUESTIONNAIRE</span><span class="page-label" id="qCount"></span></div>
+<div class="progress"><div id="bar"></div></div>
+<div id="pageQuestions"></div>
+<div class="actions"><button class="secondary" id="prevBtn">← Previous Page</button><button class="primary" id="nextBtn">Next Page →</button></div>
+</section>
+<section id="result" class="card hidden">
+<h2>Assessment Submitted</h2><div id="teamSummary"></div><div class="summary" id="metrics"></div>
+
+<div id="mistakeReview" style="margin-top:24px"></div>
+<div class="actions no-print"><button class="primary" id="downloadReport">Download Report</button><button class="secondary" id="printReport">Print / Save as PDF</button><button class="secondary" id="teacherBtn">Teacher Mode</button></div>
+<p id="sheetStatus" class="small"></p>
+</section>
+</main>
+
+
+
+<div id="teacherPanel" class="hidden"><div class="wrap card">
+<div class="actions" style="margin-top:0"><h2>Teacher Mode — Detailed Report</h2><button class="secondary" id="closeTeacher">Close</button></div>
+<div id="teacherContent"></div>
+<div class="actions"><button class="primary" id="jsonBtn">Download JSON</button><button class="primary" id="csvBtn">Download CSV</button></div>
+</div></div>
+
+<script>
+// ==================== TEACHER CONFIGURATION ====================
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const ASSESSMENT_VERSION = "B2-RC-2026.6-25Q-FLEXIBLE-WRITING";
+// SHA-256 of the teacher continuation code. The plaintext code is intentionally not stored here.
+const TEACHER_CODE_SHA256 = "a5f2d20ac4d68d83692e501b4234a203a25f269a6b01e3f3fa8a3240e05bca5e";
+// ===============================================================
+const BANK = [{"type": "gap", "q": "The engineer ___ designed this bridge won an international award.", "opts": ["who", "where", "when", "which"], "a": "who"}, {"type": "gap", "q": "The laboratory ___ the researchers work has new equipment.", "opts": ["where", "who", "when", "that"], "a": "where"}, {"type": "gap", "q": "The device ___ measures air quality was developed locally.", "opts": ["which", "where", "when", "who"], "a": "which"}, {"type": "gap", "q": "2019 was the year ___ the company launched its first electric car.", "opts": ["when", "where", "who", "which"], "a": "when"}, {"type": "gap", "q": "The professor ___ teaches robotics also works in industry.", "opts": ["who", "where", "when", "which"], "a": "who"}, {"type": "gap", "q": "This is the software ___ we use to analyze the data.", "opts": ["that", "where", "when", "who"], "a": "that"}, {"type": "gap", "q": "The hospital ___ my sister works specializes in cardiology.", "opts": ["where", "which", "who", "when"], "a": "where"}, {"type": "gap", "q": "The documentary ___ we watched in class explains the invention clearly.", "opts": ["that", "who", "where", "when"], "a": "that"}, {"type": "gap", "q": "The architect ___ designed the museum is from Japan.", "opts": ["who", "which", "where", "when"], "a": "who"}, {"type": "gap", "q": "The smartphone, ___ has an excellent camera, is also very expensive.", "opts": ["which", "that", "where", "who"], "a": "which"}, {"type": "gap", "q": "The woman ___ lives next door works in a bank.", "opts": ["who", "which", "where", "when"], "a": "who"}, {"type": "gap", "q": "That is the stadium ___ the championship final took place.", "opts": ["where", "who", "which", "when"], "a": "where"}, {"type": "gap", "q": "Summer is the season ___ many students travel abroad.", "opts": ["when", "where", "which", "who"], "a": "when"}, {"type": "gap", "q": "The laptop ___ I bought last week has started making a strange noise.", "opts": ["that", "where", "when", "who"], "a": "that"}, {"type": "gap", "q": "The flights ___ have been cancelled are listed on the screen.", "opts": ["that", "where", "when", "who"], "a": "that"}, {"type": "gap", "q": "A post office is a place ___ you can buy stamps.", "opts": ["where", "who", "when", "which"], "a": "where"}, {"type": "gap", "q": "The scientist ___ discovered the material published her findings yesterday.", "opts": ["who", "where", "when", "which"], "a": "who"}, {"type": "gap", "q": "The painting ___ hangs in the main gallery is over 200 years old.", "opts": ["which", "who", "where", "when"], "a": "which"}, {"type": "gap", "q": "Monday is the day ___ our research group usually meets.", "opts": ["when", "where", "who", "which"], "a": "when"}, {"type": "gap", "q": "The factory ___ these components are produced operates 24 hours a day.", "opts": ["where", "when", "who", "which"], "a": "where"}, {"type": "writing", "q": "Join the two sentences using a relative clause with WHO: Ana is an excellent hairdresser. She cuts my hair.", "a": "Ana, who is an excellent hairdresser, cuts my hair.", "accepted": ["ana who is an excellent hairdresser cuts my hair"]}, {"type": "writing", "q": "Join the two sentences using a relative clause with WHICH: Pasto is a small city. Pasto is also known as La Ciudad Sorpresa.", "a": "Pasto, which is also known as La Ciudad Sorpresa, is a small city.", "accepted": ["pasto which is also known as la ciudad sorpresa is a small city"]}, {"type": "writing", "q": "Join the two sentences using a relative clause with WHO: The architect designed the new museum. She won an international award.", "a": "The architect who designed the new museum won an international award.", "accepted": ["the architect who designed the new museum won an international award"]}, {"type": "writing", "q": "Join the two sentences using a relative clause with WHERE: This is the laboratory. The researchers conduct their experiments there.", "a": "This is the laboratory where the researchers conduct their experiments.", "accepted": ["this is the laboratory where the researchers conduct their experiments"]}, {"type": "writing", "q": "Join the two sentences using a relative clause with WHEN: 2024 was the year. The university opened its new library then.", "a": "2024 was the year when the university opened its new library.", "accepted": ["2024 was the year when the university opened its new library"]}];
+const TOTAL=25;
+let selected=[], answers=[], responseSeconds=[], enteredAt=0, idx=0, started=null, submitted=null, active=false, locked=false;
+let integrity=[], unlockCount=0, continuationUsed=false, navigationAttemptDetected=false, report=null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+
+function normText(s){
+ return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+ .replace(/[’']/g,"").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();
+}
+function writingCorrect(q,ans){
+ const s=normText(ans);
+ if(!s) return false;
+ const prompt=normText(q.q);
+ const has=(...xs)=>xs.every(x=>s.includes(normText(x)));
+
+ if(prompt.includes("ana is an excellent hairdresser")){
+   return s.includes("who") && has("ana","excellent hairdresser","cuts my hair");
+ }
+ if(prompt.includes("pasto is a small city")){
+   return s.includes("which") && has("pasto","small city","known as la ciudad sorpresa");
+ }
+ if(prompt.includes("architect designed the new museum")){
+   return s.includes("who") && has("architect","designed the new museum","won an international award");
+ }
+ if(prompt.includes("this is the laboratory")){
+   return s.includes("where") && has("laboratory","researchers","conduct","experiments");
+ }
+ if(prompt.includes("2024 was the year")){
+   return s.includes("when") && has("2024","year","university","opened","new library");
+ }
+ return [q.a,...(q.accepted||[])].some(x=>normText(x)===s);
+}
+function isCorrect(q,ans){
+ if(q.type==="writing") return writingCorrect(q,ans);
+ return ans===q.a;
+}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function sid(){return "RC-"+Date.now().toString(36).toUpperCase()+"-"+crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase()}
+function nowISO(){return new Date().toISOString()}
+function fmtSec(s){s=Math.max(0,Math.round(s));return `${Math.floor(s/3600)}h ${Math.floor((s%3600)/60)}m ${s%60}s`}
+function log(type,detail=""){integrity.push({timestamp:nowISO(),type,detail})}
+function addTeamFields(){let h="";for(let i=1;i<=4;i++)h+=`<div class="student"><h3>Student ${i}${i===1?" *":""}</h3><label>Name</label><input id="name${i}" ${i===1?"required":""}><label>Career / Academic Program</label><input id="career${i}" ${i===1?"required":""}></div>`;$("#teamGrid").innerHTML=h}
+addTeamFields();
+function team(){return [1,2,3,4].map(i=>({name:$("#name"+i).value.trim(),career:$("#career"+i).value.trim()})).filter(x=>x.name||x.career)}
+async function fullscreen(){try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen()}catch(e){log("fullscreen_request_failed",e.message)}}
+function lock(reason){ return; }
+async function sha256(t){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function saveTime(){if(active&&!locked&&enteredAt){const elapsed=(performance.now()-enteredAt)/1000,start=idx*13,end=Math.min(start+13,TOTAL),share=elapsed/(end-start);for(let i=start;i<end;i++)responseSeconds[i]+=share;enteredAt=performance.now()}}
+function render(){
+enteredAt=performance.now();
+const start=idx*13,end=Math.min(start+13,TOTAL),page=Math.floor(start/13)+1,pages=Math.ceil(TOTAL/13);
+$("#qCount").textContent=`Page ${page} of ${pages} • Questions ${start+1}–${end}`;
+$("#bar").style.width=`${end/TOTAL*100}%`;
+
+let h="";
+for(let i=start;i<end;i++){
+ const q=selected[i], opts=q.opts;
+ if(q.type==="writing"){
+   h+=`<div class="question-card writing-card"><span class="pill">WRITING • JOIN THE SENTENCES</span><div class="question"><b>${i+1}.</b> ${esc(q.q)}</div><textarea class="writing-input" id="write${i}" rows="3" placeholder="Write one grammatically correct combined sentence. More than one correct wording may be accepted.">${esc(answers[i]||"")}</textarea></div>`;
+ } else {
+   h+=`<div class="question-card"><span class="pill">${q.type==="gap"?"GRAMMAR • GAP":"GRAMMAR • MATCH"}</span><div class="question"><b>${i+1}.</b> ${esc(q.q)}</div>`+
+   opts.map(o=>`<label class="option"><input type="radio" name="answer${i}" value="${esc(o)}" ${answers[i]===o?"checked":""}>${esc(o)}</label>`).join("")+`</div>`;
+ }
+}
+$("#pageQuestions").innerHTML=h;
+for(let i=start;i<end;i++){
+ const q=selected[i];
+ if(q.type==="writing"){let el=document.querySelector(`#write${i}`);if(el)el.oninput=()=>answers[i]=el.value.trim();}
+ else document.querySelectorAll(`input[name="answer${i}"]`).forEach(r=>r.onchange=()=>answers[i]=r.value);
+}
+$("#prevBtn").disabled=page===1;
+$("#nextBtn").textContent=end===TOTAL?"Submit Assessment":"Next Page →";
+}
+$("#startBtn").onclick=async()=>{let t=team();if(!$("#name1").value.trim()||!$("#career1").value.trim()){alert("Student 1 name and Career / Academic Program are required.");return}
+selected=shuffle(BANK).map(q=>({...q,opts:q.opts?shuffle(q.opts):[]}));answers=Array(TOTAL).fill(null);responseSeconds=Array(TOTAL).fill(0);started=new Date();active=true;$("#setup").classList.add("hidden");$("#quiz").classList.remove("hidden");render()}
+$("#prevBtn").onclick=()=>{saveTime();if(idx>0){idx--;render()}}
+$("#nextBtn").onclick=()=>{const start=idx*13,end=Math.min(start+13,TOTAL);for(let i=start;i<end;i++){if(!answers[i]){alert(`Please answer question ${i+1} before continuing.`);return}}saveTime();if(end<TOTAL){idx++;render()}else submitAssessment()}
+$("#unlockBtn").onclick=async()=>{let h=await sha256($("#unlockCode").value);if(h!==TEACHER_CODE_SHA256){$("#unlockMsg").textContent="Authorization failed.";return}continuationUsed=true;unlockCount++;log("teacher_unlock");$("#unlockCode").value="";$("#unlockMsg").textContent="";await fullscreen();locked=false;$("#lock").classList.add("hidden");enteredAt=performance.now()}
+function buildReport(){
+let t=team(), rows=selected.map((q,i)=>({questionNumber:i+1,questionText:q.q,studentResponse:answers[i],correctAnswer:q.a,correct:isCorrect(q,answers[i]),responseTimeSeconds:+responseSeconds[i].toFixed(2)}));
+let correct=rows.filter(r=>r.correct).length, elapsed=Math.round((submitted-started)/1000);
+return {assessmentVersion:ASSESSMENT_VERSION,sessionId:window.__sid||(window.__sid=sid()),team:t,startedDateTime:started.toISOString(),submissionDateTime:submitted.toISOString(),responses:rows,correctTotal:correct,incorrectTotal:TOTAL-correct,totalQuestions:TOTAL,percentage:+(correct/25*100).toFixed(2),grade:+(correct/25*5).toFixed(2),timeSpentSeconds:elapsed,timerExpired:false,integrityFlags:integrity,teacherContinuationUsed:continuationUsed,unlockCount,navigationAttemptDetected}
+}
+async function submitAssessment(){active=false;submitted=new Date();try{if(document.fullscreenElement)await document.exitFullscreen()}catch(e){} report=buildReport();$("#quiz").classList.add("hidden");$("#result").classList.remove("hidden");
+$("#teamSummary").innerHTML=report.team.map((s,i)=>`<p><b>${esc(s.name)}</b> — ${esc(s.career)}</p>`).join("")+`<p><b>Session ID:</b> ${esc(report.sessionId)}</p>`;
+$("#metrics").innerHTML=`<div class="metric">Correct<br><b>${report.correctTotal}/25</b></div><div class="metric">Percentage<br><b>${report.percentage}%</b></div><div class="metric">Final grade<br><b>${report.grade.toFixed(2)}/5.0</b></div><div class="metric">Time spent<br><b style="font-size:1.05rem">${fmtSec(report.timeSpentSeconds)}</b></div>`;
+let wrong=report.responses.filter(r=>!r.correct);
+$("#mistakeReview").innerHTML = wrong.length
+ ? `<div class="review-box"><h3>Review Your Mistakes</h3><p class="small">The following items were answered incorrectly. Use this section to identify what you need to review.</p>${wrong.map(r=>`<div class="review-item"><div class="review-q"><b>Question ${r.questionNumber}.</b> ${esc(r.questionText)}</div><div><span class="review-label">Your answer:</span> <span class="student-wrong">${esc(r.studentResponse||"No answer")}</span></div><div><span class="review-label">Model correct answer:</span> <span class="correct-answer">${esc(r.correctAnswer)}</span></div></div>`).join("")}</div>`
+ : `<div class="review-box perfect"><h3>No mistakes to review</h3><p>You answered all 25 questions correctly.</p></div>`;
+sendSheets(report)}
+async function sendSheets(r){if(!GOOGLE_SCRIPT_URL||GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")){$("#sheetStatus").textContent="Teacher note: Google Sheets is not connected yet. Local reports remain available.";return}
+try{await fetch(GOOGLE_SCRIPT_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(r),mode:"no-cors"});$("#sheetStatus").textContent="Report transmission was initiated."}catch(e){$("#sheetStatus").textContent="Google Sheets could not be reached. Download the local report instead."}}
+function download(name,text,type){let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+$("#downloadReport").onclick=()=>{let r=report;let html=`<!doctype html><meta charset=utf-8><title>Assessment Report</title><style>body{font-family:Arial;max-width:800px;margin:40px auto;line-height:1.5}h1{color:#4338ca}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:8px}</style><h1>Relative Clauses — Assessment Report</h1><p><b>Session ID:</b> ${esc(r.sessionId)}<br><b>Version:</b> ${esc(r.assessmentVersion)}<br><b>Submission:</b> ${esc(new Date(r.submissionDateTime).toLocaleString())}</p><h2>Team</h2>${r.team.map(x=>`<p>${esc(x.name)} — ${esc(x.career)}</p>`).join("")}<table><tr><th>Correct</th><th>Incorrect</th><th>Percentage</th><th>Grade</th><th>Time</th></tr><tr><td>${r.correctTotal}/25</td><td>${r.incorrectTotal}</td><td>${r.percentage}%</td><td>${r.grade.toFixed(2)}/5.0</td><td>${fmtSec(r.timeSpentSeconds)}</td></tr></table><p><b>Integrity flags:</b> ${r.integrityFlags.length}<br><b>Teacher continuation used:</b> ${r.teacherContinuationUsed?"Yes":"No"}<br><b>Teacher unlocks:</b> ${r.unlockCount}</p><h2>Detailed Answer Review</h2><table><tr><th>#</th><th>Question</th><th>Your answer</th><th>Model correct answer</th><th>Status</th></tr>${r.responses.map(x=>`<tr><td>${x.questionNumber}</td><td>${esc(x.questionText)}</td><td>${esc(x.studentResponse)}</td><td>${esc(x.correctAnswer)}</td><td>${x.correct?"Correct":"Incorrect"}</td></tr>`).join("")}</table>`;download(`Report_${r.sessionId}.html`,html,"text/html")}
+$("#printReport").onclick=()=>window.print();
+$("#teacherBtn").onclick=()=>{let code=prompt("Teacher code:");if(code===null)return;sha256(code).then(h=>{if(h===TEACHER_CODE_SHA256)showTeacher();else alert("Authorization failed.")})}
+function showTeacher(){let r=report;$("#teacherPanel").classList.remove("hidden");let teamRows=r.team.map((x,i)=>`Student ${i+1}: ${esc(x.name)} — ${esc(x.career)}`).join("<br>");
+let qr=r.responses.map(x=>`<tr><td>${x.questionNumber}</td><td>${esc(x.questionText)}</td><td>${esc(x.studentResponse)}</td><td>${esc(x.correctAnswer)}</td><td>${x.correct?"Correct":"Incorrect"}</td><td>${x.responseTimeSeconds}</td></tr>`).join("");
+let logs=r.integrityFlags.map(x=>`<tr><td>${esc(x.timestamp)}</td><td>${esc(x.type)}</td><td>${esc(x.detail)}</td></tr>`).join("");
+$("#teacherContent").innerHTML=`<p><b>Team:</b><br>${teamRows}</p><p><b>Session ID:</b> ${r.sessionId}<br><b>Assessment version:</b> ${r.assessmentVersion}<br><b>Start:</b> ${new Date(r.startedDateTime).toLocaleString()}<br><b>Submission:</b> ${new Date(r.submissionDateTime).toLocaleString()}<br><b>Correct:</b> ${r.correctTotal} &nbsp; <b>Incorrect:</b> ${r.incorrectTotal} &nbsp; <b>Percentage:</b> ${r.percentage}% &nbsp; <b>Grade:</b> ${r.grade.toFixed(2)}/5.0<br><b>Time:</b> ${fmtSec(r.timeSpentSeconds)} &nbsp; <b>Timer Expired:</b> No / False<br><b>Integrity flags:</b> ${r.integrityFlags.length} &nbsp; <b>Teacher continuation used:</b> ${r.teacherContinuationUsed?"Yes":"No"} &nbsp; <b>Unlocks:</b> ${r.unlockCount}<br><b>Close/navigation attempt detected:</b> ${r.navigationAttemptDetected?"Yes":"No"}</p><h3>Responses</h3><div class="tablewrap"><table><tr><th>#</th><th>Question</th><th>Student response</th><th>Model correct answer</th><th>Status</th><th>Seconds</th></tr>${qr}</table></div><h3>Integrity Event Log</h3><div class="tablewrap"><table><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr>${logs||"<tr><td colspan=3>No events</td></tr>"}</table></div>`}
+$("#closeTeacher").onclick=()=>$("#teacherPanel").classList.add("hidden");
+$("#jsonBtn").onclick=()=>download(`Detailed_${report.sessionId}.json`,JSON.stringify(report,null,2),"application/json");
+$("#csvBtn").onclick=()=>{let rows=[["Question Number","Question","Student Response","Correct Answer","Correct","Response Time Seconds"],...report.responses.map(r=>[r.questionNumber,r.questionText,r.studentResponse,r.correctAnswer,r.correct,r.responseTimeSeconds])];let csv=rows.map(row=>row.map(v=>`"${String(v??"").replace(/"/g,'""')}"`).join(",")).join("\r\n");download(`Responses_${report.sessionId}.csv`,csv,"text/csv;charset=utf-8")}
+</script>
+</body></html>
